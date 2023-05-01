@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas
 
 st.set_page_config(layout="wide")
 
@@ -15,3 +16,15 @@ with col2:
     st.info(content) # Can also use .write
 
 st.write("Below you can find some of the apps I have built in Python. Feel free to contact me!")
+
+col3, col4 = st.columns(2)
+
+df = pandas.read_csv("data.csv", sep=";")
+
+with col3:
+    for index, row in df[:10].iterrows(): # iterates through the rows of the csv file
+        st.header(row["title"]) # H1 header for each title
+
+with col4:
+    for index, row in df[10:git ].iterrows():
+        st.header(row["title"])
