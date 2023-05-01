@@ -13,3 +13,5 @@ with col2:
     Hi, I'm Danny! I'm a student at the University of Minnesota, College of Science and Enginnering, studying Data Science. I have a great interest in all things tech but find software enginnering and data science the most interesting! I have experience in a variety of fields including backend, frontend and blockchain development.
     """
     st.info(content) # Can also use .write
+
+st.write("Below you can find some of the apps I have built in Python. Feel free to contact me!")
